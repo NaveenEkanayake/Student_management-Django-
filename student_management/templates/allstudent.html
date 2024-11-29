@@ -11,10 +11,9 @@
       crossorigin="anonymous"
     />
     <style>
-      /* Center spinner and set its styling */
       .spinner-wrapper {
-        display: none; /* Hide initially */
-        position: fixed; /* Fixed position to cover the whole viewport */
+        display: none; 
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -24,11 +23,11 @@
           255,
           255,
           0.8
-        ); /* Light background to make spinner visible */
+        ); 
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 9999; /* Ensure it is above all other content */
+        z-index: 9999; 
       }
       .spinner-border {
         width: 3rem;
@@ -37,7 +36,7 @@
       }
       .content {
         opacity: 0;
-        transition: opacity 0.5s ease-in-out; /* Smooth transition */
+        transition: opacity 0.5s ease-in-out; 
       }
       .content.visible {
         opacity: 1;
@@ -146,7 +145,6 @@
               </tr>
             </thead>
             <tbody id="studentTableBody">
-              <!-- Data rows will be inserted here -->
               {% for d in data %}
               <tr>
                 <td>{{ d.id }}</td>
@@ -185,16 +183,12 @@
       document.addEventListener("DOMContentLoaded", function () {
         const spinner = document.getElementById("spinner");
         const content = document.querySelector(".content");
-
-        // Show spinner when the page is loading
         spinner.style.display = "flex";
-
-        // Hide spinner after a delay when the page has fully loaded
         window.addEventListener("load", function () {
           setTimeout(function () {
             spinner.style.display = "none";
             content.classList.add("visible");
-          }, 1000); // Adjust the delay time (in milliseconds) as needed
+          }, 1000); 
         });
 
         document
