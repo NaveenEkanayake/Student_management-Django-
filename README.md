@@ -1,11 +1,12 @@
 # Student Management System - Django
 
-To start the project, run the following command:
+To start the project, follow these steps:
 
-### clone the Repository
+### Clone the Repository
+---
+### git clone https://github.com/NaveenEkanayake/Student_management-Django-.git 
+### Run the Project
+---
+Navigate to the project directory and run the following command to start the server:
 
-``bash
-git clone
-
-```bash
-python manage.py runserver
+### python manage.py runserver
