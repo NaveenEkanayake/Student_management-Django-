@@ -14,10 +14,8 @@ def index(request):
                 login(request, user)
                 return redirect('allstudent')
             else:
-                # Redirect back to index without message
                 return render(request, "index.html")
         else:
-            # Redirect back to index without message
             return render(request, "index.html")
 
     return render(request, "index.html")
